@@ -939,7 +939,12 @@ Scientist.prototype.addDiscovery = function(discovery) {
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
-
+class Animal {
+  constructor(species, gender) {
+    this.species = species;
+    this.gender = gender;
+  }
+}
 
 /**
  * Step 51
