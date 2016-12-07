@@ -1344,8 +1344,8 @@ var notWarmOrColdAnimal = new Animal('Arctic Ground Squirrel', 'male').isWarmBlo
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = new Vehicle('Porsche', '911').drive('Sunset Boulevard');
+var forwardDriving = new Vehicle('Ford', 'Mustang').drive(1);
 
 
  /* Step 93
