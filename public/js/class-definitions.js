@@ -441,12 +441,15 @@ class Person {
     this.age = age;
     this.gender = gender;
   }
+
   spendMoney(money) {
     this.money -= money;
   }
+
   earnMoney(money) {
     this.money += money;
   }
+
 }
 
 /* Step 28
@@ -507,7 +510,13 @@ function canTalkAbout(club) {
  *   write
  *
  */
+function Pen(color) {
+  this.color = color;
+}
 
+Pen.prototype.write = function(message) {
+  return this.color + ": " + message;
+};
 
 /* Step 31
  *
