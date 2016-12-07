@@ -1312,7 +1312,7 @@ Meal.prototype.containsJunkFood = function() {
   var junkFood = ['chips', 'soda', 'ice cream', 'popcorn', 'candy'];
   for(var i = 0; i < junkFood.length; i++) {
     if(this.foods.indexOf(junkFood[i]) > -1) {
-    return true;
+      return true;
     } else {
       return false;
     }
@@ -1424,5 +1424,5 @@ var cookieMonsterBlocked = new Cookie('snickerdoodle').swipedByCookieMonster('Fr
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal(['hamburger', 'soda', 'chips']).containsJunkFood();
+var goodForYou = new Meal(['salad', 'water', 'fruits']).containsJunkFood();
