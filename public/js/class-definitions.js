@@ -1086,7 +1086,7 @@ var square = new Shape(4);
 var hexagon = new Shape(6);
 
 // Create 2 boxes
-var catBox = new Box(new Animal('Cat'), true);
+var catBox = new Box(new Animal('Cat', 'female'), true);
 var christmasPresent = new Box('iPad', false);
 
 // Create 2 doors
@@ -1319,6 +1319,7 @@ Meal.prototype.containsJunkFood = function() {
   }
 };
 
+
  /* Steps 91 to 100
  *
  * Call methods
@@ -1332,9 +1333,9 @@ Meal.prototype.containsJunkFood = function() {
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+var warmBloodedAnimal = new Animal('Monkey', 'male').isWarmBlooded();
+var coldBloodedAnimal = new Animal('Fish', 'male').isWarmBlooded();
+var notWarmOrColdAnimal = new Animal('Arctic Ground Squirrel', 'male').isWarmBlooded();
 
 
 /* Step 92
