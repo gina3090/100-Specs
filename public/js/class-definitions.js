@@ -307,10 +307,12 @@ function addNumbers(number1, number2) {
  * @return {Bool}
  *
  */
-function installLinux(type) {
-  if(linuxFlavors.indexOf(type) > -1) {
+function installLinux(linux) {
+  if(linuxFlavors.indexOf(linux) > -1) {
+    console.log("Success!");
     return true;
   } else {
+    console.log("Failure.");
     return false;
   }
 }
@@ -332,7 +334,17 @@ function installLinux(type) {
  * @return {Bool when False, String when True}
  *
  */
-
+function drink(beer) {
+  if(beers.hasOwnProperty(beer)) {
+    if(typeof beers[beer] === 'object') {
+      return "This " + beer + " is " + beers[beer][0] + " and " + beers[beer][1] + ".";
+    } else {
+      return "This " + beer + " is " + beers[beer] + ".";
+    }
+  } else {
+    return false;
+  }
+}
 
 /* Step 24
  *
