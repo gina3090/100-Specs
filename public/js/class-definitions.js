@@ -1110,8 +1110,8 @@ var chocolateChip = new Cookie('chocolate');
 var gingerbread = new Cookie('gingerbread');
 
 // Create 2 different meals
-var breakfast = new Meal('cereal and milk');
-var dinner = new Meal('fish and vegetables');
+var breakfast = new Meal(['cereal', 'milk']);
+var dinner = new Meal(['fish', 'vegetables']);
 
 
  /* Steps 81 to 90
@@ -1135,7 +1135,17 @@ var dinner = new Meal('fish and vegetables');
  *       Any other species => "Could not determine if warm-blooded"
  *
  */
-
+Animal.prototype.isWarmBlooded = function() {
+  if(this.species === 'Fish') {
+    return false;
+  } else if(this.species === 'Monkey') {
+    return true;
+  } else if(this.species === 'Bird') {
+    return true;
+  } else {
+    return "Could not determine if warm-blooded";
+  }
+};
 
 /* Step 82
  *
