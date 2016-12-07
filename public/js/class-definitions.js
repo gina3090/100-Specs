@@ -1364,8 +1364,8 @@ var polygon = new Shape(1000).getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+var openAClosedBox = new Box('Vinyl Records', false).openBox();
+var closeAnOpenBox = new Box('CDs', true).openBox();
 
 
  /* Step 95
