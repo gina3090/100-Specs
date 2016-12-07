@@ -1179,7 +1179,27 @@ Vehicle.prototype.drive = function(streetName) {
  * Any other number => "Could not determine type"
  *
  */
-
+Shape.prototype.getType = function() {
+  if(this.sides === 3) {
+    return "triangle";
+  } else if(this.sides === 4) {
+    return "quadrilateral";
+  } else if(this.sides === 5) {
+    return "pentagon";
+  } else if(this.sides === 6) {
+    return "hexagon";
+  } else if(this.sides === 7) {
+    return "heptagon";
+  } else if(this.sides === 8) {
+    return "octagon";
+  } else if(this.sides === 9) {
+    return "nonagon";
+  } else if(this.sides === 10) {
+    return "decagon";
+  } else {
+    return "Could not determine type";
+  }
+};
 
 /* Step 84
  *
