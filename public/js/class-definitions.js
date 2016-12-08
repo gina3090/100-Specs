@@ -624,7 +624,9 @@ function PrincessLeia(name, money, age, gender) {
   this.isInTrouble = null;
 }
 
-PrincessLeia.prototype = Object.create(Person.prototype);
+PrincessLeia.prototype = Object.create(Person.prototype, {
+  constructor: PrincessLeia
+});
 
 PrincessLeia.prototype.shootsGun = function() {
   this.isInTrouble = false;
@@ -720,7 +722,9 @@ function Scientist(name, money, age, gender) {
   this.discoveries = [];
 }
 
-Scientist.prototype = Object.create(Person.prototype);
+Scientist.prototype = Object.create(Person.prototype, {
+  constructor: Person
+});
 
 Scientist.prototype.addDiscipline = function(discipline) {
   this.disciplines.push(discipline);
